@@ -1,14 +1,6 @@
 {
     "version": 2,
-    "builds": [{
-      "src": "./index.js.js",
-      "use": "@now/node-server"
-    }],
-    "routes": [{"handle": "filesystem"},
-      {
-        "src": "/.*",
-        "dest": "index.js.js"
-      }
-    ]
+    "name": "red-onion-server",
+    "builds": [{ "src": "index.js.js", "use": "@vercel/node" }],
+    "routes": [{ "src": "/(.*)", "dest": "/index.js.js" }]
   }
-  
