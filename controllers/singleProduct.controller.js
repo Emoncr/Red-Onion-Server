@@ -6,7 +6,6 @@ module.exports = singleProduct = async (req, res) => {
     const product = await Product.find({ food_id: productId }).select({
       _id:0,
       updatedAt:0,
-      
     });
     res.status(200).send(product);
   } catch (error) {

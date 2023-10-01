@@ -1,5 +1,5 @@
 module.exports =  userControler = (req, res) => {
-  res.send("data");
+  res.send('testing user')
 };
 
 

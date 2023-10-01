@@ -26,7 +26,7 @@ mongoose
     console.log(err);
   });
 
-app.use("/user/", userRoute);
+app.use("/users/", userRoute);
 app.use("/", addProduct);
 app.use("/", productRoute);
 app.use("/", singleProduct);
